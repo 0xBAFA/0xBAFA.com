@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Character Art Gallery</h1>
+        <div class="controls">
+            <button id="sortDate" class="active">Sort by Date</button>
+            <button id="sortName">Sort by Name</button>
+        </div>
+    </header>
+    
+    <main>
+        <div id="gallery" class="gallery">
+            <!-- Images will be loaded here by JavaScript -->
+        </div>
+        <div id="loading" class="loading">loading...</div>
+    </main>
+
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div class="modal-info">
+            <h3 id="modalTitle"></h3>
+            <p id="modalDate"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
